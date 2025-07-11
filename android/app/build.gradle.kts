@@ -35,6 +35,15 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../release-keystore.jks")
+            storePassword = "password"
+            keyAlias = "release"
+            keyPassword = "password"
+        }
+    }
+
     flavorDimensions += "env"
     productFlavors {
         create("staging") {
@@ -54,12 +63,6 @@ android {
         }
     }
 
-//    buildTypes {
-//        release {
-//            signingConfig = signingConfigs.getByName("debug")
-//        }
-//    }
-
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
@@ -68,7 +71,7 @@ android {
                 "proguard-rules.pro"
             )
 
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }
