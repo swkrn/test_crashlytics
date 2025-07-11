@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "39503001139",
+    "project_id": "test-crashlytics-4b1fd",
+    "storage_bucket": "test-crashlytics-4b1fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39503001139:android:066f15e0ab7fd1ec419546",
+        "android_client_info": {
+          "package_name": "com.example.test_crashlytics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJdfxKdvA2KE0ze4EiZALL0yMj1Hjqa0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
